@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;600&display=swap');
+
+.contact-page-wrapper {
+  background-color: #f1eef3;
+  margin-top: 76px; /* Navbar height */
+  min-height: 100vh; /* Page ko kam az kam full screen rakhne ke liye */
+}
+
+/* --- Header Styling --- */
+.section-subtitle {
+  color: #e2b34a;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.section-title {
+  color: #2d1b4d;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section-desc {
+  color: #666;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 600px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* --- BOXES STYLING (FIXED) --- */
+.contact-info-box, .faq-box, .contact-form-box {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  /* height: 100%;  <-- YE LINE HATA DI HAI, AB THEEK HO JAYEGA */
+}
+
+/* Form box ko thora lamba dikhana acha lagta hai, magar zaroori nahi */
+.contact-form-box {
+  height: 100%; 
+}
+
+.box-title {
+  color: #2d1b4d;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* --- Contact Info Styling --- */
+.icon-wrapper {
+  color: #e2b34a;
+  background-color: #fcf7ea;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0; /* Icon ko pichakne se rokay ga */
+}
+
+.info-label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #2d1b4d;
+}
+
+.info-text {
+  font-family: 'Montserrat', sans-serif;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* --- FAQ List Styling --- */
+.faq-list li {
+  font-family: 'Montserrat', sans-serif;
+  color: #555;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.faq-list li:hover {
+  color: #e2b34a;
+  text-decoration: underline;
+}
+
+/* --- Form Styling --- */
+.form-input {
+  border: 1px solid #eee;
+  background-color: #fcfcfc;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.form-input:focus {
+  border-color: #e2b34a;
+  box-shadow: 0 0 0 0.2rem rgba(226, 179, 74, 0.25);
+}
+
+.btn-send-message {
+  background: linear-gradient(to right, #4b2c85, #6a4ba3);
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-send-message:hover {
+  background: linear-gradient(to right, #382066, #553a8f);
+  transform: translateY(-2px);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 991px) {
+  .section-title {
+    font-size: 2.2rem;
+  }
+  .contact-form-box {
+    padding: 30px !important;
+    height: auto; /* Mobile par auto height */
+  }
+  
+  /* Mobile par spacing theek karne ke liye */
+  .contact-info-box {
+    margin-bottom: 20px;
+  }
+}

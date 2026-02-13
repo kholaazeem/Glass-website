@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500&display=swap');
+
+/* Default (Desktop) Styling */
+.story-section {
+  padding: 100px 0;
+  background-color:   #e7e7ec; /* Halka sa grey/white background jaisa image mein hai */
+;
+  overflow: hidden; /* Scrollbar issue rokne ke liye */
+}
+
+/* Image Styling */
+.story-img {
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(45, 27, 77, 0.15);
+  width: 100%; /* Image hamesha container ki full width legi */
+  height: auto; /* Height automatic adjust hogi */
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.story-img:hover {
+  transform: scale(1.02);
+}
+
+/* Typography */
+.story-subtitle {
+  color: #e2b34a;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.story-title {
+  color: #2d1b4d;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.story-text {
+  color: #555;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* --- MOBILE RESPONSIVE FIXES --- */
+
+/* Tablets & Mobile (Screen width 991px se kam ho to ye chalega) */
+@media (max-width: 991px) {
+  .story-section {
+    padding: 60px 20px; /* Side padding di taaki text kinare se na chipke */
+  }
+
+  .text-content {
+    text-align: center; /* Mobile par text center acha lagta hai */
+    margin-top: 20px;
+    padding-left: 0 !important; /* Desktop wali padding khatam */
+  }
+
+  .story-title {
+    font-size: 2rem; /* Heading thori choti ki taaki mobile par fit aye */
+  }
+
+  .story-text {
+    font-size: 1rem; /* Paragraph font adjust */
+    text-align: justify; /* Text ko dono taraf se barabar karega (Clean look) */
+    text-align-last: center; /* Aakhri line center mein */
+  }
+  
+  .image-wrapper {
+    margin-bottom: 20px; /* Image aur Text ke beech gap */
+  }
+}
+
+/* Extra Small Screens (Phones like iPhone SE, etc) */
+@media (max-width: 576px) {
+  .story-title {
+    font-size: 1.8rem;
+  }
+  .story-section {
+    padding: 40px 15px;
+  }
+}

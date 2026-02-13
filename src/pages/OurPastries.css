@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;600&display=swap');
+
+/* Page Background */
+.pastries-page-wrapper {
+  background-color: #ecedf3; /* Very light grey/white background */
+  padding-top: 60px; /* Navbar ke liye space */
+}
+
+/* --- Header Styling --- */
+.collection-subtitle {
+  color: #e2b34a;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.collection-title {
+  color: #2d1b4d;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.collection-desc {
+  color: #666;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 600px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* --- CARD STYLING --- */
+.pastry-card {
+  border: none;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  overflow: hidden;
+  /* "all" kar diya taaki shadow aur movement dono smooth hon */
+  transition: all 0.4s ease; 
+}
+
+/* Hover Effect: Shadow Deep + Card Move Up */
+.pastry-card:hover {
+  box-shadow: 0 20px 40px rgba(45, 27, 77, 0.2);
+  transform: translateY(-10px); /* Ye card ko 10px oopar le jayega */
+}
+
+/* Image Zoom wahi rahega */
+.pastry-card:hover .pastry-img {
+  transform: scale(1.12);
+}
+
+/* Image Styling */
+.pastry-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease; /* Smooth Zoom Effect */
+}
+
+/* Hover par Image Zoom (Scale) hogi */
+.pastry-card:hover .pastry-img {
+  transform: scale(1.12); /* 12% Badi ho jayegi */
+}
+
+/* Featured Badge */
+.featured-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 2;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  background-color: #e2b34a !important; /* Gold Color */
+  color: #2d1b4d !important;
+  border-radius: 20px;
+  padding: 5px 12px;
+}
+
+/* --- Card Content --- */
+.pastry-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #2d1b4d;
+}
+
+.pastry-price {
+  color: #e2b34a;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.pastry-desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  color: #777;
+  line-height: 1.5;
+}
+
+.border-top-custom {
+  border-top: 1px solid #eee;
+}
+
+/* Calories Badge */
+.calories-badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #4b2c85;
+  background-color: #f3f0fa;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+/* Add Button */
+.btn-add-cart {
+  background-color: #4b2c85;
+  border: none;
+  font-size: 0.85rem;
+  padding: 6px 15px;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.btn-add-cart:hover {
+  background-color: #382066;
+  transform: translateY(-2px);
+}
+
+/* Custom Gold Button Style */
+.btn-gold-menu {
+  background-color: #f7c456 !important; /* Gold Color */
+  color: #2d1b4d !important; /* Deep Purple Text */
+  font-weight: 700;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-gold-menu:hover {
+  background-color: #c5a059 !important; /* Darker Gold on Hover */
+  color: #fff !important; /* Text White on hover (Optional, looks good) */
+  transform: translateY(-2px); /* Thora sa oopar uthega */
+}

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;600&display=swap');
+
+.footer-main {
+  background-color: #2d1b4d; /* Same Deep Purple */
+  color: white;
+  padding-top: 60px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Typography */
+.footer-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.footer-desc {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+.footer-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: white;
+}
+
+/* Links Styling */
+.footer-list li, .footer-contact li {
+  margin-bottom: 12px;
+}
+
+.footer-list a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 0.9rem;
+}
+
+.footer-list a:hover {
+  color: #e2b34a;
+  padding-left: 5px;
+}
+
+.footer-contact {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+.text-gold {
+  color: #e2b34a;
+  font-weight: 600;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  border-top: 1px solid #e2b34a; /* Yellow Line neechay wali */
+}
+
+.copyright, .made-with {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+}
+
+/* Responsive Mobile Fixes */
+@media (max-width: 768px) {
+  .offset-lg-1 { margin-left: 0; }
+  .footer-bottom { text-align: center; }
+  .footer-bottom .col-md-6 { margin-bottom: 10px; }
+}

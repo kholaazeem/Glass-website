@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+
+/* Navbar Specific Styling */
+.text-purple {
+  color: #4b2c85 !important;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.nav-custom {
+  color: #4b2c85 !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-custom::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e2b34a;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-custom:hover::after, .nav-custom.active::after {
+  width: 100%;
+}
+
+.btn-purple {
+  background-color: #4b2c85;
+  color: white;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 4px; 
+  font-weight: 600;
+}
+
+.btn-purple:hover {
+  background-color: #382066;
+}

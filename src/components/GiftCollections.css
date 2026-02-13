@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+.gift-section {
+  background-color: #2d1b4d; /* Main Deep Purple Background */
+  padding: 80px 0;
+  color: white;
+  border-radius: 12px; /* Screenshot jaisa rounded corner effect agar container mein ho */
+  margin: 40px 0; /* Thora gap oopar neeche */
+}
+
+/* Header Typography */
+.gift-subtitle {
+  color: #e2b34a;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.gift-title {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* Gift Card Styling */
+.gift-card {
+  background-color: rgba(255, 255, 255, 0.05); /* Halka sa transparent white jo purple par blend hoga */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 40px 20px;
+  height: 100%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.gift-card:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Hover par thora bright */
+  transform: translateY(-5px);
+}
+
+.gift-card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.gift-card-desc {
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.gift-price {
+  font-family: 'Montserrat', sans-serif;
+  color: #e2b34a; /* Gold Price */
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* Button Styling */
+.btn-view-all {
+  background-color: #e2b34a;
+  color: #2d1b4d;
+  font-weight: 700;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  transition: 0.3s;
+}
+
+.btn-view-all:hover {
+  background-color: #c5a059;
+  color: black;
+}

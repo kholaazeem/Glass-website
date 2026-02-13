@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;600&display=swap');
+
+/* Section Styling */
+.promise-section {
+  background-color: #e7e7ec; /* Halka sa grey/white background jaisa image mein hai */
+}
+
+/* Header Typography */
+.section-subtitle {
+  color: #e2b34a; /* Gold color */
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  color: #2d1b4d; /* Dark Purple */
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* Card Styling */
+.promise-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Default halka shadow */
+  transition: all 0.4s ease-in-out; /* Smooth animation */
+}
+
+/* Typography inside Card */
+.card-heading {
+  color: #2d1b4d;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.card-desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Icon Box Styling */
+.icon-box {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%; /* Circle banayega */
+  background-color: #eae7f1; /* Halka Purple background (Default) */
+  color: #4b2c85; /* Purple Icon (Default) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+/* --- HOVER EFFECTS --- */
+
+.promise-card:hover {
+  transform: translateY(-10px); /* Card upar uthega */
+  box-shadow: 0 15px 30px rgba(75, 44, 133, 0.15); /* Shadow dark aur purple tint mein */
+}
+
+/* Jab card hover ho, to uske andar wala icon box change ho */
+.promise-card:hover .icon-box {
+  background-color: #4b2c85; /* Background Purple ho jayega */
+  color: white; /* Icon White ho jayega */
+  box-shadow: 0 0 0 4px rgba(75, 44, 133, 0.2); /* Optional: Outer ring effect */
+}
+
+/* Paste inside OurPromise.css or index.css */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-reveal {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+.delay-5 { animation-delay: 1.0s; }

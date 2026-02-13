@@ -1,0 +1,136 @@
+/* --- HERO SECTION STYLING --- */
+
+.hero-main-wrapper {
+  margin-top: 76px; /* Navbar ki jagah chori */
+  min-height: calc(100vh - 76px);
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  /* BACKGROUND IMAGE SETUP */
+  background: 
+    linear-gradient(90deg, rgba(45, 27, 77, 0.9) 0%, rgba(45, 27, 77, 0.75) 40%, rgba(45, 27, 77, 0.3) 100%),
+    url('../assets/hero-pastries.jpg'); /* Ensure path is correct */
+    
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Typography & Content */
+.sub-heading {
+  color: #e2b34a;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.main-title {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(4rem, 10vw, 7rem);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.description {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  max-width: 550px;
+  line-height: 1.6;
+}
+
+/* Buttons Styling */
+.btn-gold {
+  background-color: #e2b34a;
+  color: #2d1b4d;
+  font-weight: 700;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.btn-gold:hover {
+  background-color: #c5a059;
+  transform: translateY(-2px);
+}
+
+.btn-outline-gold {
+  background: transparent;
+  border: 1px solid #e2b34a;
+  color: #e2b34a;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.btn-outline-gold:hover {
+  background: rgba(226, 179, 74, 0.1);
+  color: white;
+  border-color: white;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.7;
+}
+
+.mouse {
+  width: 26px;
+  height: 42px;
+  border: 2px solid white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+}
+
+.wheel {
+  width: 4px;
+  height: 8px;
+  background: white;
+  border-radius: 2px;
+  animation: scrollAnim 1.5s infinite;
+}
+
+/* --- ANIMATION KEYFRAMES --- */
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scrollAnim {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(12px); opacity: 0; }
+}
+
+/* Helper Classes */
+.animate-reveal {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+.delay-5 { animation-delay: 1.2s; }
+
+/* Mobile Fixes */
+@media (max-width: 768px) {
+  .hero-main-wrapper { background-position: left center; }
+  .content-box { text-align: center !important; padding: 0 15px; }
+  .d-flex { justify-content: center; flex-wrap: wrap; }
+  .description { margin-left: auto; margin-right: auto; }
+}
