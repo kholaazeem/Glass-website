@@ -13,7 +13,7 @@ const LoveStory = () => {
           <Col lg={6} md={12} sm={12} xs={12} className="mb-4 mb-lg-0">
             <div className="image-wrapper animate-reveal delay-1">
               <img 
-                src="../src/assets/couple-moment.jpg" 
+                src="/assets/couple-moment.jpg" 
                 alt="Couple sharing a moment" 
                 className="img-fluid story-img"
               />

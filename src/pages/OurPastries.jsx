@@ -28,7 +28,7 @@ const OurPastries = () => {
       price: "$4.50",
       desc: "Our signature creation, filled with silky vanilla cream using our secret low-calorie formula.",
       calories: "85 cal",
-      img: "../src/assets/pastry-cream-puff.jpg",
+      img: "/assets/pastry-cream-puff.jpg",
       featured: true
     },
     {
@@ -37,7 +37,7 @@ const OurPastries = () => {
       price: "$3.50",
       desc: "Delicate French macarons infused with Provence lavender.",
       calories: "65 cal",
-      img: "../src/assets/pastry-macaron.jpg",
+      img: "/assets/pastry-macaron.jpg",
       featured: false 
     },
     {
@@ -46,7 +46,7 @@ const OurPastries = () => {
       price: "$5.00",
       desc: "Rich chocolate glaze adorned with edible gold.",
       calories: "95 cal",
-      img: "../src/assets/pastry-eclair.jpg",
+      img: "/assets/pastry-eclair.jpg",
       featured: true
     }
   ];

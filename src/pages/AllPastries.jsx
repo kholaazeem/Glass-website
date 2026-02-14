@@ -14,7 +14,7 @@ const AllPastries = () => {
       price: "$4.50",
       desc: "Our signature creation, filled with silky vanilla cream.",
       calories: "85 cal",
-      img: "../src/assets/pastry-cream-puff.jpg",
+      img: "/assets/pastry-cream-puff.jpg",
       featured: true
     },
     {
@@ -23,7 +23,7 @@ const AllPastries = () => {
       price: "$3.50",
       desc: "Delicate French macarons infused with Provence lavender.",
       calories: "65 cal",
-      img: "../src/assets/pastry-macaron.jpg",
+      img: "/assets/pastry-macaron.jpg",
       featured: false 
     },
     {
@@ -32,7 +32,7 @@ const AllPastries = () => {
       price: "$5.00",
       desc: "Rich chocolate glaze adorned with edible gold.",
       calories: "95 cal",
-      img: "../src/assets/pastry-eclair.jpg",
+      img: "/assets/pastry-eclair.jpg",
       featured: true
     },
     {
@@ -41,7 +41,7 @@ const AllPastries = () => {
       price: "$6.00",
       desc: "Infused with organic rose water and topped with edible petals.",
       calories: "110 cal",
-      img: "../src/assets/pastry-cream-puff.jpg", 
+      img: "/assets/pastry-cream-puff.jpg", 
       featured: false
     },
     {
@@ -50,7 +50,7 @@ const AllPastries = () => {
       price: "$7.50",
       desc: "Low-sugar dark chocolate layers with fresh cherries.",
       calories: "140 cal",
-      img: "../src/assets/pastry-eclair.jpg", 
+      img: "/assets/pastry-eclair.jpg", 
       featured: false
     },
     {
@@ -59,7 +59,7 @@ const AllPastries = () => {
       price: "$3.00",
       desc: "Zesty lemon curd in a delicate meringue shell.",
       calories: "55 cal",
-      img: "../src/assets/pastry-macaron.jpg", 
+      img: "/assets/pastry-macaron.jpg", 
       featured: true
     }
   ];
