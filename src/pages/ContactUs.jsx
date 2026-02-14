@@ -1,9 +1,33 @@
 import React from 'react';
 import { Container, Row, Col, Form, Button, FloatingLabel } from 'react-bootstrap';
-import { Envelope, Telephone, GeoAlt } from 'react-bootstrap-icons'; // npm install react-bootstrap-icons
+import { Envelope, Telephone, GeoAlt } from 'react-bootstrap-icons';
+import Swal from 'sweetalert2'; // 1. SweetAlert Import kiya
 import './ContactUs.css';
 
 const ContactUs = () => {
+
+  // 2. Form Submit Function Banaya
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Ye page ko reload hone se rokega
+
+    // SweetAlert Fire hoga
+    Swal.fire({
+      title: 'Message Sent!',
+      text: 'Thank you for contacting Glass. We will get back to you shortly.',
+      icon: 'success',
+      confirmButtonText: 'Great!',
+      confirmButtonColor: '#2d1b4d', // Purple color (Theme match)
+      iconColor: '#e2b34a', // Gold color (Icon match)
+      background: '#fff',
+      backdrop: `
+        rgba(45,27,77,0.4)
+      `
+    });
+
+    // Optional: Form reset karne ke liye
+    e.target.reset();
+  };
+
   return (
     <div className="contact-page-wrapper py-5">
       <Container>
@@ -18,13 +42,12 @@ const ContactUs = () => {
           </p>
         </div>
 
-        <Row className="g-4"> {/* g-4 Grid gap manage karega */}
+        <Row className="g-4"> 
           
           {/* --- LEFT COLUMN --- */}
           <Col lg={5} className="animate-reveal delay-2 d-flex flex-column">
             
-            {/* Box 1: Get in Touch */}
-            <div className="contact-info-box p-4 mb-4"> {/* mb-4 GAP ke liye zaroori hai */}
+            <div className="contact-info-box p-4 mb-4">
               <h4 className="box-title mb-4">Get in Touch</h4>
               
               <div className="d-flex mb-4">
@@ -55,7 +78,6 @@ const ContactUs = () => {
               </div>
             </div>
 
-            {/* Box 2: FAQ (Ab ye upar walay box ke foran neeche ayega) */}
             <div className="faq-box p-4 flex-grow-1">
               <h4 className="box-title mb-4">Frequently Asked</h4>
               <ul className="faq-list ps-3">
@@ -73,32 +95,34 @@ const ContactUs = () => {
             <div className="contact-form-box p-4 p-md-5">
               <h4 className="box-title mb-4">Send a Message</h4>
               
-              <Form>
+              {/* 3. Form Tag par onSubmit lagaya */}
+              <Form onSubmit={handleSubmit}>
                 <Row className="g-3 mb-3">
                   <Col md={6}>
                     <FloatingLabel controlId="formName" label="Name">
-                      <Form.Control type="text" placeholder="Your name" className="form-input" />
+                      <Form.Control required type="text" placeholder="Your name" className="form-input" />
                     </FloatingLabel>
                   </Col>
                   <Col md={6}>
                     <FloatingLabel controlId="formEmail" label="Email">
-                      <Form.Control type="email" placeholder="name@example.com" className="form-input" />
+                      <Form.Control required type="email" placeholder="name@example.com" className="form-input" />
                     </FloatingLabel>
                   </Col>
                 </Row>
 
                 <FloatingLabel controlId="formSubject" label="Subject" className="mb-3">
-                  <Form.Control type="text" placeholder="Subject" className="form-input" />
+                  <Form.Control required type="text" placeholder="Subject" className="form-input" />
                 </FloatingLabel>
 
                 <FloatingLabel controlId="formMessage" label="Message" className="mb-4">
-                  <Form.Control as="textarea" placeholder="Message" style={{ height: '150px' }} className="form-input" />
+                  <Form.Control required as="textarea" placeholder="Message" style={{ height: '150px' }} className="form-input" />
                 </FloatingLabel>
 
                 <Button className="btn-send-message w-100 py-3" type="submit">
                   Send Message
                 </Button>
               </Form>
+
             </div>
           </Col>
 
