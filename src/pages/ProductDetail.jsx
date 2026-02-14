@@ -17,7 +17,7 @@ const ProductDetail = () => {
       longDesc: "Experience the cloud-like texture of our signature choux pastry. Filled with a Madagascar vanilla bean cream that is surprisingly low in sugar but high in indulgence.",
       calories: "85 cal",
       ingredients: "Almond flour, Stevia, Vanilla Bean, Egg Whites, Skimmed Cream",
-      img: "../src/assets/pastry-cream-puff.jpg",
+      img: "/assets/pastry-cream-puff.jpg",
       featured: true
     },
     {
@@ -28,7 +28,7 @@ const ProductDetail = () => {
       longDesc: "Transport yourself to the purple fields of Provence. These delicate macarons are crafted with precision, balancing the floral notes of lavender with a hint of honey sweetness.",
       calories: "65 cal",
       ingredients: "Almond meal, Egg whites, Dried Lavender, Natural Honey",
-      img: "../src/assets/pastry-macaron.jpg",
+      img: "/assets/pastry-macaron.jpg",
       featured: false 
     },
     {
@@ -39,7 +39,7 @@ const ProductDetail = () => {
       longDesc: "A masterpiece of mystery. Dark chocolate ganache (70% cocoa) coats a crisp pastry shell filled with our secret coffee-infused cream.",
       calories: "95 cal",
       ingredients: "Dark Chocolate, Gold Dust, Espresso, Whole Wheat Pastry Flour",
-      img: "../src/assets/pastry-eclair.jpg",
+      img: "/assets/pastry-eclair.jpg",
       featured: true
     },
     // --- New Items (From Full Menu) ---
@@ -51,7 +51,7 @@ const ProductDetail = () => {
       longDesc: "A romantic treat designed for special occasions. The crust is buttery and crumbly, holding a fragrant rose-infused custard.",
       calories: "110 cal",
       ingredients: "Organic Rose Water, Butter, Flour, Cane Sugar",
-      img: "../src/assets/pastry-cream-puff.jpg", 
+      img: "/assets/pastry-cream-puff.jpg", 
       featured: false
     },
     {
@@ -62,7 +62,7 @@ const ProductDetail = () => {
       longDesc: "A lighter take on the classic Black Forest cake. Layers of airy chocolate sponge, fresh cherries, and whipped cream.",
       calories: "140 cal",
       ingredients: "Cocoa Powder, Fresh Cherries, Heavy Cream, Stevia",
-      img: "../src/assets/pastry-eclair.jpg", 
+      img: "/assets/pastry-eclair.jpg", 
       featured: false
     },
     {
@@ -73,7 +73,7 @@ const ProductDetail = () => {
       longDesc: "A burst of sunshine in every bite. Tangy lemon curd nestled in a crisp, sweet meringue cloud.",
       calories: "55 cal",
       ingredients: "Lemon Juice, Zest, Egg Whites, Sugar",
-      img: "../src/assets/pastry-macaron.jpg", 
+      img: "/assets/pastry-macaron.jpg", 
       featured: true
     }
   ];
